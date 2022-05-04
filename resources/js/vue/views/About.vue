@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>{{ about }}</h1>
+  <div class="bg-zinc-900">
+    <h1 class="text-zinc-100">{{ about }}</h1>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 import { defineComponent, ref } from "vue";
 export default defineComponent({
   setup() {
-    const about = ref("about");
+    const about = ref<String>("about");
     return {
       about,
     };

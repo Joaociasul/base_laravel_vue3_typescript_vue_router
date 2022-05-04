@@ -27,4 +27,7 @@ const router = createRouter({
     routes,
 });
 
+router.beforeEach((el) =>  {
+})
+
 export default router;
