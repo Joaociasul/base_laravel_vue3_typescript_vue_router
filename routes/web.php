@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{any?}', function () {
+Route::get('/{p1?}/{p2?}', function () {
     return view('welcome');
-})
-    ->where('any', '/')
-    ->where('any', 'about');
+})->setWheres(['p1' => 'about', 'p2' => 'teste']);
